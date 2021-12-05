@@ -14,4 +14,4 @@ if __name__ == "__main__":
         main()
         stop = perf_counter_ns()
         exec_times.append(stop - start)
-    print(f"Average execution time over 10 iterations: {(sum(exec_times) / len(exec_times)) / 1000000}ms")
+    print(f"Average execution time over {ITERATIONS} iterations: {(sum(exec_times) / len(exec_times)) / 1000000}ms")
